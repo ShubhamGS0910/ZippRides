@@ -4,7 +4,7 @@
    See SETUP.md for the 5-minute deployment steps.
    ============================================================ */
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzXfZWCeOJt8nmDgta4H7wooeDOsW9wJbgRSQaujBy-TtZJUcPnGRUE9u4X1M-X_EQg/exec";
+const SCRIPT_URL = ("https://script.google.com/macros/s/AKfycbzXfZWCeOJt8nmDgta4H7wooeDOsW9wJbgRSQaujBy-TtZJUcPnGRUE9u4X1M-X_EQg/exec");
 
 /** Sends form fields to the Google Sheet via the Apps Script web app. */
 async function sendToSheet(dataObject) {

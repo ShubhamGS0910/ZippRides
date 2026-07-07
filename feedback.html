@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback — Zipp Rides Cab Services</title>
+<meta name="description" content="Share feedback about your Zipp Rides journey.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <span class="name">ZIPP <span>RIDES</span></span>
+      <span class="tag">Zip Smart · Ride Safe</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#book">Book a Ride</a>
+    </div>
+    <div class="nav-cta">
+      <a href="index.html#book" class="btn btn-amber">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<section style="padding-top:64px;">
+  <div class="wrap" style="max-width:720px;">
+    <div class="section-head" style="margin: 0 auto 36px; text-align:center; max-width:520px;">
+      <div class="eyebrow" style="justify-content:center;">Rate Your Journey</div>
+      <h2>How was your journey with Zipp Rides?</h2>
+      <p>Your feedback goes straight to our team and shapes how we train drivers and run every trip.</p>
+    </div>
+
+    <div class="slip">
+      <form id="feedback-form">
+        <div class="field full" style="margin-bottom:26px;">
+          <label>Overall rating</label>
+          <div class="stars">
+            <input type="radio" name="rating" id="r1" value="1"><label for="r1">★</label>
+            <input type="radio" name="rating" id="r2" value="2"><label for="r2">★</label>
+            <input type="radio" name="rating" id="r3" value="3"><label for="r3">★</label>
+            <input type="radio" name="rating" id="r4" value="4"><label for="r4">★</label>
+            <input type="radio" name="rating" id="r5" value="5"><label for="r5">★</label>
+          </div>
+        </div>
+
+        <div class="form-grid" style="grid-template-columns:1fr; gap:18px;">
+          <div class="field">
+            <label for="driverBehavior">Driver behavior</label>
+            <select id="driverBehavior" name="driverBehavior">
+              <option>Polite</option>
+              <option>Professional</option>
+              <option>Needs Improvement</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="cleanliness">Car cleanliness</label>
+            <select id="cleanliness" name="cleanliness">
+              <option>Sparkling</option>
+              <option>Clean</option>
+              <option>Could be better</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="safety">Safety &amp; driving</label>
+            <select id="safety" name="safety">
+              <option>Felt Safe</option>
+              <option>Moderate</option>
+              <option>Rash Driving</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="improvement">One thing we can do better?</label>
+            <textarea id="improvement" name="improvement" rows="3" placeholder="Tell us what would make the next ride even better"></textarea>
+          </div>
+
+          <div class="field">
+            <label>Would you recommend us to a friend?</label>
+            <div class="pill-select">
+              <input type="radio" id="rec-yes" name="recommend" value="Yes" checked><label for="rec-yes">Yes</label>
+              <input type="radio" id="rec-no" name="recommend" value="No"><label for="rec-no">No</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-amber btn-block" style="margin-top:28px;">Submit Feedback</button>
+        <div class="form-status" id="feedback-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-bottom" style="border-top:none; margin-top:0;">
+    <span>© <span id="year"></span> Zipp Rides Cab Services.</span>
+    <a href="index.html">Back to Home</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

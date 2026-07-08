@@ -91,6 +91,12 @@ p { margin: 0; }
     linear-gradient(45deg, var(--ink-900) 25%, var(--teal) 25%, var(--teal) 75%, var(--ink-900) 75%);
 }
 
+
+.logo{
+    height:60px;
+    width:auto;
+    display:block;
+}
 /* ---------- Nav ---------- */
 .nav {
   position: sticky;

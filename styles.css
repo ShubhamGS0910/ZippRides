@@ -106,8 +106,8 @@ p { margin: 0; }
   align-items: center;
   justify-content: space-between;
   height: 74px;
-}
-/*
+} 
+
 .logo .tag {
   font-family: var(--mono);
   font-size: 10px;
@@ -127,9 +127,9 @@ p { margin: 0; }
   font-weight: 500;
   transition: color 0.2s;
 }
-.nav-links a:hover { color: var(--paper); } */
+.nav-links a:hover { color: var(--paper); } 
 
-
+/*
 .logo {
   display: flex;
   flex-direction: column;
@@ -152,7 +152,7 @@ p { margin: 0; }
   text-transform: uppercase;
   margin-top: 2px;
 }
-
+*/
 
 
 
